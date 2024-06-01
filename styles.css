@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header .navbar {
+    transition: background-color 0.5s;
+    height: 80px;
+}
+
+header .navbar-nav .nav-link {
+    transition: color 0.3s;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: rgb(231, 36, 72);
+}
+.single-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 60px 0;
+}
+.sliding-images {
+    width: 100%;
+    overflow: hidden;
+    height: 700px; 
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    animation: slideAnimation 15s infinite;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay background color */
+    color: #ffffff; 
+  }
+  
+  .overlay h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff3366; /* Button color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  @keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+
+#contact h2, #what-we-do h2, #growth h2 {
+    margin-bottom: 20px;
+   
+}
+#contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+#contact h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#contact h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#contact img {
+    max-height: 100%;
+    object-fit: cover;
+}
+#what-we-do {
+    text-align: center;
+  
+}
+
+#what-we-do .carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+.service-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(202, 40, 67);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.service-card:hover .overlay {
+    opacity: 1;
+}
+.service-card .overlay .text {
+    text-align: center;
+}
+
+.carousel-indicators {
+    bottom: -75px;
+    margin-left: -880px;
+}
+.carousel-indicators li {
+    background-color: black;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators .active {
+    background-color: transparent;
+    border: 2px solid rgb(202, 40, 67);
+}
+#our-project h5.text-danger {
+    font-weight: bold;
+    text-align: center;
+}
+
+#our-project h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item.active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.list-group-item.active:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+#company-growth h5.text-danger {
+    font-weight: bold;
+}
+
+#company-growth h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.growth-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.growth-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.growth-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.growth-card h3 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.growth-card p {
+    margin: 0;
+    font-weight: bold;
+}
+.modal-contact-button {
+    width: 100%; 
+    margin-top: 20px; 
+    background-color: #ff3366; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px;
+    font-weight: bold; 
+    border-radius: 5px; 
+}
+
+.modal-contact-button:hover {
+    background-color: #e02e5d; 
+}
+.form-check-input{
+    background-color: #ff3366;
+}
